@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <div id="header">
+        <h:messages id="messages" globalOnly="true" showDetail="true" infoClass="messageInfo" errorClass="messageError" />
+        <div class="container-fluid" >
+            <div class="row" >
+                <div class="col-md-10" >
+                    <img src="../resources/img/Isologo.png" alt="Isologo" style="width: 100px;height: 47px;margin-top: 1px;margin-left: 50px;"/>
+                </div>
+                <div class="col-md-2">
+                    <h:form prependId="false">
+                        <h:commandButton value="Cerrar Sesión" class="btn btn-info"
+                                         action="#{sessionController.cerrarSesion()}">
+                        </h:commandButton>
+                    </h:form>
+                </div>
+
+            </div>
+        </div>
+    </div> 
+
+
+
+
+</ui:composition>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    
+    
+    
+    <nav class="cl-effect-4">
+
+        <h5 style="color: white;margin-left: 60px;">#{sessionController.user.tblrolesRolId.rolNombre}</h5>
+
+        <img src="../resources/img/hector.jpg" class="img-fluid rounded-circle" width="72" height="72" alt="Generic placeholder thumbnail" style="margin-left: 70px;border: 3px solid #fff;"/> 
+
+        <h6 style="color: white;margin-top: 15px;margin-left: 20px;font-size: 15px;">#{sessionController.user.usuId} | #{sessionController.user.usuNombres}
+            #{sessionController.user.usuPrimerApellido} #{sessionController.user.usuSegundoApellido}
+        </h6>
+        <hr/>
+
+        <ul>
+            <span class="fa fa-puzzle-piece fa-2x" style="color: #fff;margin-left: 20px;"></span>
+            <a href="JProducc-usuarios.xhtml" style="text-decoration:none;font-size: 12px;"><li>Usuario</li></a> 
+            <hr/>
+            <span class="fa fa-plus fa-2x" style="color: #fff;margin-left: 20px;"></span>
+            <a href="JProducc-pedidos.xhtml" style="text-decoration:none;font-size: 12px;"><li>Pedidos
+                </li></a>  
+            <hr/>
+        </ul>
+    </nav>   
+
+ 
+
+</ui:composition>
